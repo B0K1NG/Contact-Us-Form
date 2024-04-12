@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contact-form">
+    <form>
+      <div class="form-group">
+        <label for="full-name">Full name</label>
+        <input type="text" id="subject" name="full-name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Enter your message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <div class="dropdown">
+          <div class="select">
+              <div class="selected" id="choice">Choose your photoshoot package</div>
+              <div class="caret"></div>
+          </div>
+          <ul class="menu">
+              <li>Individual Photoshoot – From €90</li>
+              <li>Event Photoshoot – From €200</li>
+              <li>Company Photoshoot – From €250</li>
+              <li>Custom Inquiry (for those who want a personalized offer)</li>
+          </ul>
+      </div>
+      </div>
+
+      <input type="submit" value="SUBMIT">
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
